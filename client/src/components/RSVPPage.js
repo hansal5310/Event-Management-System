@@ -185,7 +185,7 @@ const RSVPPage = ({ user, apiBaseUrl = 'http://localhost:5000' }) => {
           ← Back to Events
         </button>
         <div className="header-actions">
-          <button onClick={() => navigate('/dashboard')} className="dashboard-btn">
+          <button onClick={() => navigate('/user-dashboard')} className="dashboard-btn">
             🏠 Dashboard
           </button>
         </div>

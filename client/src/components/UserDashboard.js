@@ -92,7 +92,7 @@ const UserDashboard = ({ user }) => {
           <div className="header-actions">
             <button 
               className="browse-btn"
-              onClick={() => navigate('/events')}
+              onClick={() => navigate('/user-events')}
             >
               <span className="btn-icon">🎪</span>
               Browse Events
