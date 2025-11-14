@@ -5,6 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #0a400c; /* Set default text color to theme green instead of black */
+}
+
+/* Ensure all text elements default to theme color instead of black */
+h1, h2, h3, h4, h5, h6, p, span, div, a, label, li, td, th {
+  color: #0a400c;
+}
+
+/* But allow buttons and inputs to inherit their specific colors */
+button, input, textarea {
+  color: inherit;
 }
 
 code {
@@ -213,7 +224,7 @@ code {
 
 .primary-btn {
   background: linear-gradient(135deg, #0a400c 0%, #819067 100%);
-  color: #fefae0;
+  color: #141413;
   border: none;
   padding: 12px 24px;
   border-radius: 10px;
@@ -277,7 +288,7 @@ code {
 }
 
 .stat-content h3 {
-  color: #666;
+  color: #819067;
   margin: 0 0 8px 0;
   font-size: 0.9rem;
   font-weight: 500;
@@ -346,7 +357,7 @@ code {
 }
 
 .preview-content p {
-  color: #666;
+  color: #819067;
   margin: 0 0 8px 0;
   font-size: 0.9rem;
 }
@@ -445,7 +456,7 @@ code {
 }
 
 .event-desc {
-  color: #666;
+  color: #819067;
   font-size: 0.8rem;
 }
 
@@ -456,7 +467,7 @@ code {
 }
 
 .time {
-  color: #666;
+  color: #819067;
   font-size: 0.8rem;
 }
 
@@ -644,7 +655,7 @@ code {
 }
 
 .header-content p {
-  color: #666;
+  color: #819067;
   font-size: 1.1rem;
   margin: 0;
 }
@@ -697,7 +708,7 @@ code {
 }
 
 .optional {
-  color: #666;
+  color: #819067;
   font-size: 0.8rem;
   font-weight: 400;
 }
@@ -737,7 +748,7 @@ code {
 }
 
 .form-hint {
-  color: #666;
+  color: #819067;
   font-size: 0.85rem;
   margin: 0;
 }
@@ -781,13 +792,13 @@ code {
 
 .cancel-btn {
   background: #f8f9fa;
-  color: #666;
+  color: #819067;
   border-color: #e5e5e5;
 }
 
 .cancel-btn:hover:not(:disabled) {
   background: #e9ecef;
-  color: #495057;
+  color: #819067;
 }
 
 .submit-btn {
@@ -836,7 +847,7 @@ code {
 }
 
 .preview-header p {
-  color: #666;
+  color: #819067;
   margin: 0;
   font-size: 0.9rem;
 }
@@ -869,7 +880,7 @@ code {
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: #666;
+  color: #819067;
 }
 
 .placeholder-icon {
@@ -905,7 +916,7 @@ code {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #666;
+  color: #819067;
   font-size: 0.9rem;
 }
 
@@ -916,7 +927,7 @@ code {
 }
 
 .preview-description {
-  color: #666;
+  color: #819067;
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0 0 1.5rem 0;
@@ -1161,7 +1172,7 @@ code {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  color: #666;
+  color: #819067;
   font-size: 1.1rem;
 }
 
@@ -1193,7 +1204,7 @@ code {
   padding: 12px 20px;
   background: none;
   border: none;
-  color: #666;
+  color: #819067;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -1221,7 +1232,7 @@ code {
 .no-events {
   text-align: center;
   padding: 4rem 2rem;
-  color: #666;
+  color: #819067;
 }
 
 .no-events-icon {
@@ -1356,7 +1367,7 @@ code {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #666;
+  color: #819067;
   font-size: 0.85rem;
   text-align: right;
 }
@@ -1377,7 +1388,7 @@ code {
 }
 
 .time {
-  color: #666;
+  color: #819067;
 }
 
 .event-details {
@@ -1391,7 +1402,7 @@ code {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #666;
+  color: #819067;
   font-size: 0.9rem;
 }
 
@@ -1402,7 +1413,7 @@ code {
 }
 
 .event-description {
-  color: #666;
+  color: #819067;
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0 0 1.5rem 0;
@@ -1447,7 +1458,7 @@ code {
 
 .details-btn {
   background: #f8f9fa;
-  color: #666;
+  color: #819067;
   border: 2px solid #e5e5e5;
 }
 
@@ -1739,7 +1750,7 @@ code {
 }
 
 .info-label {
-  color: #666;
+  color: #819067;
   font-weight: 500;
   min-width: 120px;
 }
@@ -1811,7 +1822,7 @@ code {
 }
 
 .stat-content h3 {
-  color: #666;
+  color: #819067;
   margin: 0 0 8px 0;
   font-size: 0.9rem;
   font-weight: 500;
@@ -1827,7 +1838,7 @@ code {
 }
 
 .stat-description {
-  color: #666;
+  color: #819067;
   font-size: 0.85rem;
 }
 
@@ -1881,7 +1892,7 @@ code {
 }
 
 .empty-state p {
-  color: #666;
+  color: #819067;
   font-size: 1rem;
   margin: 0 0 2rem 0;
 }
@@ -2029,7 +2040,7 @@ code {
 }
 
 .time {
-  color: #666;
+  color: #819067;
   font-size: 0.8rem;
 }
 
@@ -2044,7 +2055,7 @@ code {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #666;
+  color: #819067;
   font-size: 0.9rem;
 }
 
@@ -2107,7 +2118,7 @@ code {
   padding: 1rem;
   background: #f8f9fa;
   border-radius: 12px;
-  color: #666;
+  color: #819067;
 }
 
 .show-more p {
