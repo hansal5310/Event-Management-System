@@ -2,9 +2,26 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
 const userSchema = new mongoose.Schema({
+  name: { type: String, required: false },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  role: { type: String, enum: ['User', 'Admin'], default: 'User' },
+  role: { type: String, enum: ['User', 'Admin', 'Vendor'], default: 'User' },
+  phone: { type: String },
+  profileImage: { type: String },
+  
+  // Vendor specific fields
+  vendorType: { 
+    type: String, 
+    enum: ['Caterer', 'Decorator', 'Photographer', 'DJ', 'Venue', 'Other'] 
+  },
+  businessName: { type: String },
+  businessDescription: { type: String },
+  serviceArea: [String],
+  portfolio: [String], // Array of image URLs
+  rating: { type: Number, default: 0 },
+  verified: { type: Boolean, default: false },
+  
+  createdAt: { type: Date, default: Date.now }
 });
 
 userSchema.pre('save', async function (next) {

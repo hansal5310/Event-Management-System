@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import '../styles/textColors.css'; // <-- added import
 
 
 const UserDashboard = ({ user }) => {
@@ -85,7 +86,7 @@ const UserDashboard = ({ user }) => {
         <div className="header-content">
           <div className="header-left">
             <div className="welcome-section">
-              <h1>Welcome back!</h1>
+              <h1 className="fill-text">Welcome back!</h1>
               <p>Here's what's happening with your events</p>
             </div>
           </div>

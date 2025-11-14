@@ -5,11 +5,11 @@ import axios from 'axios';
 const LoginRegister = ({ setUser, apiBaseUrl = 'http://localhost:5000' }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({ 
+    name: '',
     email: '', 
     password: '', 
     confirmPassword: '', 
-    role: 'User',
-    name: ''
+    role: 'User'
   });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);

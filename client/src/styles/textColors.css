@@ -1,0 +1,16 @@
+/* Regular text color */
+.fill-text {
+  color: #0a400c; /* change this to any color you want */
+}
+
+/* For inline SVG <text> or elements using 'fill' */
+.svg-fill {
+  fill: #0a400c;
+}
+
+/* Prefer using currentColor inside SVG so CSS 'color' controls it:
+   <svg class="icon" viewBox="..."><path fill="currentColor" .../></svg>
+*/
+.icon, .svg-icon {
+  color: #0a400c; /* affects SVGs using currentColor and regular icons */
+}
